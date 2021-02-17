@@ -66,7 +66,7 @@ public class File {
                     new FileOutputStream(file, false)));
             out.write(conent);
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("追加文件失败：", e);
         } finally {
             out.close();
         }
@@ -82,7 +82,7 @@ public class File {
             writer.write(content);
             writer.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            log.error("追加文件失败：", e);
         } finally {
             //关闭读写流
             writer.close();
@@ -103,7 +103,7 @@ public class File {
             randomFile.writeBytes(content);
             randomFile.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            log.error("追加文件失败：", e);
         } finally {
             //关闭读写流
             randomFile.close();
@@ -134,7 +134,7 @@ public class File {
             //清空缓冲区数据
             writer.flush();
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("追加文件失败：", e);
         }finally {
             //关闭读写流
             writer.close();

@@ -21,6 +21,7 @@ public class Time {
         Thread.sleep(5000);
         stopWatch.stop();
         log.info("耗时计算：{}", (double) stopWatch.getTime()/1000 + "s");
+        // 重新开始计算
         stopWatch.reset();
         stopWatch.start();
         Thread.sleep(3000);
