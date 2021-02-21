@@ -150,6 +150,7 @@ public class ZipUtils {
     }
 
     public static void main(String[] args) throws Exception {
+        log.info("测试开始!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         // 压缩后的文件
         FileOutputStream fileOutputStream1 = new FileOutputStream("/Users/luoyu/Downloads/test.zip");
         ZipUtils.toZip("/Users/luoyu/Downloads/日报内容.txt", fileOutputStream1,true);
@@ -159,6 +160,7 @@ public class ZipUtils {
         fileList.add(new File("/Users/luoyu/Downloads/日报内容2.txt"));
         FileOutputStream fileOutputStream2 = new FileOutputStream("/Users/luoyu/Downloads/test.zip");
         ZipUtils.toZip(fileList, fileOutputStream2);
+        log.info("测试结束!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
     }
 
 }
