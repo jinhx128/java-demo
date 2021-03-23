@@ -33,6 +33,22 @@ public class ZipUtils {
 
     private static final int  BUFFER_SIZE = 2 * 1024;
 
+    public static void main(String[] args) throws Exception {
+        log.info("测试开始!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        // 1
+        // 压缩后的文件
+        FileOutputStream fileOutputStream1 = new FileOutputStream("/Users/luoyu/Downloads/test.zip");
+        ZipUtils.toZip("/Users/luoyu/Downloads/日报内容.txt", fileOutputStream1,true);
+
+        // 2
+        List<File> fileList = new ArrayList<>();
+        fileList.add(new File("/Users/luoyu/Downloads/日报内容1.txt"));
+        fileList.add(new File("/Users/luoyu/Downloads/日报内容2.txt"));
+        FileOutputStream fileOutputStream2 = new FileOutputStream("/Users/luoyu/Downloads/test.zip");
+        ZipUtils.toZip(fileList, fileOutputStream2);
+        log.info("测试结束!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+    }
+
     /**
      * 单个
      * @param srcDir 要压缩文件路径
@@ -147,20 +163,6 @@ public class ZipUtils {
                 }
             }
         }
-    }
-
-    public static void main(String[] args) throws Exception {
-        log.info("测试开始!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        // 压缩后的文件
-        FileOutputStream fileOutputStream1 = new FileOutputStream("/Users/luoyu/Downloads/test.zip");
-        ZipUtils.toZip("/Users/luoyu/Downloads/日报内容.txt", fileOutputStream1,true);
-
-        List<File> fileList = new ArrayList<>();
-        fileList.add(new File("/Users/luoyu/Downloads/日报内容1.txt"));
-        fileList.add(new File("/Users/luoyu/Downloads/日报内容2.txt"));
-        FileOutputStream fileOutputStream2 = new FileOutputStream("/Users/luoyu/Downloads/test.zip");
-        ZipUtils.toZip(fileList, fileOutputStream2);
-        log.info("测试结束!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
     }
 
 }

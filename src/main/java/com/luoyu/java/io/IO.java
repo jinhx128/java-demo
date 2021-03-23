@@ -1,4 +1,4 @@
-package com.luoyu.java.file;
+package com.luoyu.java.io;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -45,13 +45,17 @@ import java.io.*;
  * PrintWriter(打印流，可以一次写一行)
  */
 @Slf4j
-public class File {
+public class IO {
 
     public static void main(String[] args) throws Exception {
         log.info("测试开始!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        // 1
         test1("/Users/luoyu/Desktop/test.txt", "追加到文件的末尾");
+        // 2
         test2("/Users/luoyu/Desktop/test.txt", "追加到文件的末尾");
+        // 3
         test3("/Users/luoyu/Desktop/test.txt", "追加到文件的末尾");
+        // 4
         test4("/Users/luoyu/Desktop/test.txt", "追加到文件的末尾");
         log.info("测试结束!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
     }
