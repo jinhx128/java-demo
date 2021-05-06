@@ -1,4 +1,4 @@
-package com.luoyu.java.zip;
+package com.jinhx.java.zip;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.time.StopWatch;
