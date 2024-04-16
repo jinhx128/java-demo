@@ -1,4 +1,4 @@
-package com.jinhx.java.io;
+package com.jinhx.java.util;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -45,7 +45,7 @@ import java.io.*;
  * PrintWriter(打印流，可以一次写一行)
  */
 @Slf4j
-public class IO {
+public class IOUtils {
 
     public static void main(String[] args) throws Exception {
         log.info("测试开始!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
