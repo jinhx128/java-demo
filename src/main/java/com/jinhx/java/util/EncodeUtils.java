@@ -14,10 +14,7 @@ import java.security.SecureRandom;
 import java.util.Base64;
 
 /**
- * @version 1.0
- * @author jinhaoxun
- * @date 2018-05-09
- * @description 加密工具类
+ * 加密工具类
  */
 public class EncodeUtils {
 

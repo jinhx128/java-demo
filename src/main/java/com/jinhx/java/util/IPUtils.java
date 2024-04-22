@@ -6,10 +6,7 @@ import org.springframework.util.StringUtils;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * IPUtils
- *
- * @author jinhx
- * @since 2019-08-06
+ * ip工具
  */
 @Slf4j
 public class IPUtils {

@@ -9,10 +9,7 @@ import org.apache.commons.net.ftp.FTPReply;
 import java.io.*;
 
 /**
- * @Description: ftp上传下载工具类
- * @Author: jinhaoxun
- * @Date: 2020/1/16 15:46
- * @Version: 1.0.0
+ * ftp上传下载工具类
  */
 @Slf4j
 public class FtpUtils {
