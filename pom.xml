@@ -88,6 +88,13 @@
             <artifactId>commons-codec</artifactId>
             <version>1.14</version>
         </dependency>
+
+        <!-- 文件、流、加密解密、转码、正则、线程、XML等JDK方法工具 -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.5.6</version>
+        </dependency>
     </dependencies>
 
     <build>
