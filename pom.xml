@@ -95,6 +95,13 @@
             <artifactId>hutool-all</artifactId>
             <version>5.5.6</version>
         </dependency>
+
+        <!-- UserAgentUtils -->
+        <dependency>
+            <groupId>eu.bitwalker</groupId>
+            <artifactId>UserAgentUtils</artifactId>
+            <version>1.21</version>
+        </dependency>
     </dependencies>
 
     <build>
