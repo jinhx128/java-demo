@@ -1,4 +1,4 @@
-package com.jinhx.java.other.redis;
+package com.jinhx.java.Listener;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.connection.DefaultMessage;
